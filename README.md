@@ -30,7 +30,7 @@ Welcome to my resume website! This project is part of my Web System Development 
 
 ## Publishing
 
-The website is published using GitHub Pages. You can view it live [here](#).
+The website is published using GitHub Pages. You can view it live [here](https://neilneel.github.io/my-resume/).
 
 ## Requirements
 
