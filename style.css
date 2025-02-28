@@ -1,0 +1,139 @@
+/* Since you've set 1rem = 10px through the 62.5% method:
+✅ Use REM for: layouts, spacing, typography
+✅ Use PX for: borders, shadows, tiny decorative elements */
+
+/* 
+margin for title :
+- main(h1) & container :
+      - TOP : 3rem
+- secondary(h2) :
+      - BOTTOM : 1.2rem 
+
+margin for content:
+- TOP(span) : 0.4rem
+- TOP(p) : 1rem
+- Bullet points TOP: 0.8rem
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "IBM_VGA";
+  src: url("./fonts/oldschool_pc_font_pack_v2.2_web/woff_Web_webfonts/WebPlus_IBM_VGA_8x16-2x.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* general */
+
+html {
+  font-size: 62.5%; /*10px = 1rem*/
+}
+
+body {
+  font-family: "IBM_VGA", monospace;
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  transform: scaleX(0.6667);
+  max-width: 112rem;
+  margin: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.small-text {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.secondary-heading {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5px;
+  display: block;
+  border-bottom: 1.2px solid #000;
+}
+
+.secondary-heading::before {
+  content: "";
+  position: absolute;
+  left: -0.4rem;
+  top: -1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #f00;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.topic-description-bullet {
+  list-style-position: inside;
+  margin-top: 1rem;
+}
+
+.topic-description-bullet li {
+  margin-bottom: 0.8rem;
+}
+
+.table-col-left {
+  text-align: left;
+}
+
+.table-col-right {
+  text-align: right;
+}
+
+/* title container */
+main {
+  margin: 3rem 0;
+}
+
+.title-container p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* experience container */
+.exp-container {
+  margin-top: 3rem;
+}
+
+table {
+  width: 100%;
+}
+
+/* table,
+tr,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+} */
+
+/* skills container */
+.skills-container {
+  margin-top: 3rem;
+}
+
+/* education container */
+.edu-container {
+  margin-top: 3rem;
+}
+
+.collage-small-font {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* project container */
+.project-container {
+  margin-top: 3rem;
+}
