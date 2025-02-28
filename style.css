@@ -137,3 +137,13 @@ td {
 .project-container {
   margin-top: 3rem;
 }
+
+/* footer */
+footer {
+  border-top: 2px solid;
+  padding: 1.2rem 0;
+}
+
+footer a {
+  display: inline-block;
+}
